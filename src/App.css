@@ -1,38 +1,79 @@
-.App {
-  text-align: center;
+*{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: #f5f6fa;
+    margin: 5px;
+}
+.app{
+    display: flex;
+    justify-content:space-evenly;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app_headline{
+    color:lightcoral;
+    letter-spacing: 4px;
+}
+.app_subheadline{
+    color: #667884;
+    font-size: 20px; 
+}
+.app__dropdown{
+    background-color:white;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.text__center{
+    text-align: center !important;
+}
+.app__left , .app__right{
+    flex: 1;
+    padding: 1rem;
+}
+.app__right__card{
+    height:100%
+}
+.app__right__card__content{
+    height: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.line__graph__container {
+    height: 290px;
+}
+.app__header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom: 20px;
+}
+.app__stats{
+    display: flex;
+    justify-content: space-between;
 }
 
-.App-link {
-  color: #61dafb;
+.footer{
+    text-align: end;
+    padding: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media (max-width:980px){
+    .app{
+        flex-direction: column;
+    }
+}
+
+@media (max-width:480px){
+    .app__stats{
+        flex-direction:column;
+    }
+    .infoBox {
+        margin:10px;
+    }
+    .app_headline{
+        letter-spacing: 2px;
+        font-size: 20px;
+    }
+    .app_subheadline{
+        font-size:16px;
+    }
 }
